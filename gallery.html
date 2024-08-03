@@ -1,0 +1,299 @@
+<html>
+    <head>
+        <meta charset="UTf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+         <style>
+            body{
+                background-image: url(back.png);
+                background-position: center;
+                background-size: cover;
+            }
+            section{
+                padding: 2rem 9%;
+            }
+            .heading{
+                text-align: center;
+                padding-bottom: 2rem;
+                color: black;
+                text-transform: uppercase;
+                font-size: 4rem;
+            }
+            .heading span{
+                color: blue;
+                text-transform: uppercase;
+            }
+            .gallery .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+            gap:1.5rem;
+            }
+            .gallery .box-container .box{
+                position: relative;
+                border: .5rem solid #333;
+                border-radius: .5rem;
+                height: 25rem;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            .gallery .box-container .box video{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .gallery .box-container .box:hover video{
+                transform: scale(1.1);
+                filter:grayscale() ;
+            }
+            .gallery .box-container .box .title{
+                position: absolute;
+                top: 0rem;
+                left: 0;
+                right: 0;
+                color: #fff;
+                text-align: center;
+                padding-bottom: 0rem;
+                font-size: 2rem;
+            }
+            .gallery .box-container .box:hover .title{
+                top:0;
+            }
+            .gallery .box-container .box .icons{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #333;
+                padding-top: 1rem;
+                text-align: center;
+            
+            }
+            .gallery .box-container .box:hover .icons{
+                bottom: 0;
+            }
+            .gallery .box-container .box .icons a{
+                text-decoration: none;
+                font-size: 2rem;
+                margin: .5rem 1rem;
+                color: #fff;
+            }
+            .gallery .box-container .box .icons a:hover{
+                 color:blue;
+            }
+            .navbar{
+                color: black;
+            }
+            .navbar ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0px;
+                color:black;
+                text-align: right;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .navbar ul li{
+                display: inline;
+                margin-right: 10px;
+            }
+            .navbar ul li a{
+                color:black;
+                text-decoration: none;
+                text-align: right;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 2px 15px;
+                border-radius: 10px;
+            }
+            .navbar ul li a:hover{
+                background: burlywood;
+                transition: 0.5s;
+            }
+            footer{
+                background-color: #1226a6;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+         </style>
+    </head>
+    <body>
+            <div class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Our Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="sign up.html">Sign up</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <section class="gallery" id="gallery">
+                <h1 class="heading">Our <span>Gallery</span></h1>
+                <div class="box-container">
+                    <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="weds.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi1.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi2.1.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi2.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi3.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi4.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi5.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi6.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi7.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi 8.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi9.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wedi video.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="w4.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video autoplay loop muted plays-inline>
+                                <source src="wed.mp4" type="video/mp4">
+                            </video>
+                            <h3 class="title">videos and events</h3>
+                            <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </body>
+    <footer>
+        <p>&copy;2024 Supraja. All rights reserved.</p>
+    </footer>
+</html>

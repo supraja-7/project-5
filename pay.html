@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title>payment</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <style>
+            .navbar{
+                color: black;
+            }
+            .navbar ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0px;
+                color:black;
+                text-align: right;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .navbar ul li{
+                display: inline;
+                margin-right: 10px;
+            }
+            .navbar ul li a{
+                color:black;
+                text-decoration: none;
+                text-align: right;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 2px 15px;
+                border-radius: 10px;
+            }
+            .navbar ul li a:hover{
+                background: burlywood;
+                transition: 0.5s;
+            }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.cardpx-4{
+    border: 2px solid black;
+    width: 395px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.containerp-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0C4160;
+    padding: 30px 10px;
+    background-image:url(payment.png); 
+    background-repeat:no-repeat;
+    background-size:cover; 
+}
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    border-radius: 20 px;
+}
+
+p {
+    margin: 0px;
+}
+
+.container .h8 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.btn.btn-primary {
+    width: 61%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    margin-left: 82px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+.form-control {
+    color: white;
+    background-color: #223C60;
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #0C4160;
+    border: 2px solid #2d4dda;
+    box-shadow: none;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+.ps-3{
+    padding: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+footer{
+    background-color: #1226a6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+</style>
+</head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Our Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="sign up.html">Sign up</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="containerp-0">
+            <div class="cardpx-4">
+                <center><h1 class="h8 py-3">Payment Details</h1></center> 
+                <div class="row gx-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="person"></ion-icon>Person Name</p>
+                            <input class="form-control mb-3" type="text" placeholder="Name" value="abcd efgh">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="card"></ion-icon>Advance Amount</p>
+                            <input class="form-control mb-3" type="text" placeholder="enter">
+                        </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="card"></ion-icon>Card Number/UPI</p>
+                            <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="alert"></ion-icon>Event date</p>
+                            <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="lock-closed"></ion-icon>CVV</p>
+                            <input class="form-control mb-3 pt-2 " type="password" placeholder="*">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn btn-primary mb-3">
+                            <a class="ps-3" href="payment-success.html">Pay Now</a>
+                            <span class="fas fa-arrow-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   </body>
+   <footer>
+    <p>&copy;2024 Supraja. All rights reserved.</p>
+</footer>
+</html>

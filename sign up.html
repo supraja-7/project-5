@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="UTf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <style>
+            body{
+                background-image: url(ser.jpeg);
+                background-position: center;
+                background-size: cover;
+                font-family: 'Roboto',sans-serif;
+            }
+            .navbar{
+                color: black;
+            }
+            .navbar ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0px;
+                color:black;
+                text-align: right;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .navbar ul li{
+                display: inline;
+                margin-right: 10px;
+            }
+            .navbar ul li a{
+                color:black;
+                text-decoration: none;
+                text-align: right;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 2px 15px;
+                border-radius: 10px;
+            }
+            .navbar ul li a:hover{
+                background: burlywood;
+                transition: 0.5s;
+            }
+             h1{
+                text-align: center;
+                padding-top: 15px;
+             }
+             h4{
+                text-align: center;
+             }
+             form{
+                width: 300px;
+                margin-left: 20px;
+             }
+            form label{
+                display: flex;
+                margin-top: 20px;
+                font-size: 18px;
+             }
+             form input{
+                width: 100%;
+                padding: 8px;
+                border:none;
+                border: 1px solid gray;
+                border-radius: 6px;
+                outline: none;
+             }
+             input[type="button"]{
+                width: 300px;
+                height: 35px;
+                margin-top: 18px;
+                border: none;
+                background-color: green;
+                color: #fff;
+                font-size: 18px;
+             }
+             p{
+                text-align: center;
+                padding-top: 20px;
+                font-size: 15px;
+             }
+             para-2{
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                margin-top: -10px;
+             }
+            para-2 a{
+                color: #49c1a2;
+             }
+            footer{
+                background-color: #1226a6;
+                color: #fff;
+                text-align: center;
+            }
+            .btn {
+                display: inline-block;
+                padding: 15px;
+                background: green;
+                height: 15px;
+                width: 130px;
+                border: 2px solid green;
+                box-shadow: 0 0 10px rgb(0,0,0,1);
+                font-size: 18px;
+                color: #eaeaea;
+                letter-spacing: 2px;
+                text-decoration: none;
+                font-weight: 400;
+                transition: .5s;
+                text-align: left;
+            }
+           .btn:hover{
+            background: transparent;
+            color: green;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Our Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="sign up.html">Sign up</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+        <h1>Sign Up</h1>
+        <h4>It's free and only takes a minute</h4>
+        <center>
+            <form action="Login.html">
+            <label>First Name</label>
+            <input type="text" placeholder="">
+            <label>Last Name</label>
+            <input type="text" placeholder="">
+            <label>Email</label>
+            <input type="email" placeholder="">
+            <label>Password</label>
+            <input type="password" placeholder="">
+            <br><br>
+            <div class="main-btn">
+                <a href="Login.html" class="btn">&nbsp;&nbsp;&nbsp;&nbsp;Submit</a>
+            </div>
+            </form>
+        </center>
+        <p>By Clicking the Sign Up button,you agree to our <br>
+        <a href="#">Terms and Conditions</a> and <a href="#">Policy And Privacy</a></p>
+    <p class="para-2">Already have an account? <a href="#">Login here</a></p>
+</body><br><br>
+    <footer>
+        <p>&copy;2024 Supraja. All rights reserved.</p>
+    </footer>
+</html>

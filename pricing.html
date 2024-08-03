@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <meta charset="UTf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <style>
+            body{
+                background-image: url(ser.jpeg);
+                background-position: center;
+                background-size: cover;
+            }
+            section{
+                padding: 2rem 9%;
+            }
+            .heading{
+                text-align: center;
+                padding-bottom: 2rem;
+                color: black;
+                text-transform: uppercase;
+                font-size: 4rem;
+            }
+            .heading span{
+                color: blue;
+                text-transform: uppercase;
+            }
+            .navbar{
+                color: black;
+            }
+            .navbar ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0px;
+                color:black;
+                text-align: right;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .navbar ul li{
+                display: inline;
+                margin-right: 10px;
+            }
+            .navbar ul li a{
+                color:black;
+                text-align: right;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 2px 15px;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+            .navbar ul li a:hover{
+                background: burlywood;
+                transition: 0.5s;
+            }
+            .price .box-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+                gap:1.5rem;
+            }
+            .price .box-container .box{
+                padding: 1rem;
+                background: #333;
+                border-radius: .5rem;
+                text-align: center;
+            }
+            .price .box-container .box:hover{
+                transform: scale(1.03);
+            }
+            .price .box-container .box .title{
+                  color:#fff;
+                  font-size: 2rem;
+                  background: blue;
+            }
+            .price .box-container .box .title amount{
+                color:#fff;
+                font-size: 3rem;
+            }
+            .price .box-container .box  h3{
+                color:#fff;
+                font-size: 1rem;
+            }
+            .price .box-container .box ul{
+                list-style: none;
+                padding: 1rem 0;
+                color: #fff;
+            }
+            .price .box-container .box ul i{
+                color: blue;
+                 padding-right: .5rem;
+                
+            }
+            .btn{
+                margin-top: 1rem;
+                display: inline-block;
+                padding: 1rem;
+                font-size: 1rem;
+                border-radius: .5rem;
+                background: #fff;
+                cursor: pointer;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            .btn:hover{
+                background: blue;
+            }
+            footer{
+                background-color: #1226a6;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+        </style>
+    </head>
+        <body>
+            <div class="navbar">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Our Gallery</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="sign up.html">Sign up</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <section class="price" id="price">
+                <h1 class="heading">Our <span>price</span></h1>
+                <div class="box-container">
+                    <div class="box">
+                        <h3 class="title">for birthdays</h3>
+                        <h3 class="amount">starts from Rs.10000/- upto customer range</h3>
+                        <ul>
+                           <i class="fa-solid fa-check"></i>full services<br>
+                           <i class="fa-solid fa-check"></i>decorations<br>
+                           <i class="fa-solid fa-check"></i>photos and  videos<br>
+                           <i class="fa-solid fa-check"></i>food<br>
+                           <i class="fa-solid fa-check"></i>entertainment<br>
+                        </ul>
+                        <a href="#" class="btn">check out</a><br><br>
+                        <a href="pay.html" class="btn">Payment</a>                 
+                    </div>
+                    <div class="box">
+                        <h3 class="title">for weddings</h3>
+                        <h3 class="amount">starts from Rs.500000/- upto customer range</h3>
+                        <ul>
+                           <i class="fa-solid fa-check"></i>full services<br>
+                           <i class="fa-solid fa-check"></i>decorations<br>
+                           <i class="fa-solid fa-check"></i>photos and  videos<br>
+                           <i class="fa-solid fa-check"></i>food<br>
+                           <i class="fa-solid fa-check"></i>entertainment<br>
+                        </ul>
+                        <a href="#" class="btn">check out</a><br><br>
+                        <a href="pay.html" class="btn">Payment</a>                 
+                    </div>
+                    <div class="box">
+                        <h3 class="title">for corporate partys</h3>
+                        <h3 class="amount">starts from Rs.50000/- upto customer range</h3>
+                        <ul>
+                           <i class="fa-solid fa-check"></i>full services<br>
+                           <i class="fa-solid fa-check"></i>decorations<br>
+                           <i class="fa-solid fa-check"></i>photos and  videos<br>
+                           <i class="fa-solid fa-check"></i>food<br>
+                           <i class="fa-solid fa-check"></i>entertainment<br>
+                        </ul>
+                        <a href="#" class="btn">check out</a><br><br>
+                        <a href="pay.html" class="btn">Payment</a>                 
+                    </div>
+                    <div class="box">
+                        <h3 class="title">for others</h3>
+                        <h3 class="amount">starts from Rs.10000/- upto customer range</h3>
+                        <ul>
+                           <i class="fa-solid fa-check"></i>full services<br>
+                           <i class="fa-solid fa-check"></i>decorations<br>
+                           <i class="fa-solid fa-check"></i>photos and  videos<br>
+                           <i class="fa-solid fa-check"></i>food<br>
+                           <i class="fa-solid fa-check"></i>entertainment<br>
+                        </ul>
+                        <a href="#" class="btn">check out</a> <br><br>
+                        <a href="pay.html" class="btn">Payment</a>                
+                    </div>
+                </div>
+            </section>
+        </body>
+        <footer>
+            <p>&copy;2024 Supraja. All rights reserved.</p>
+        </footer>
+</html>
